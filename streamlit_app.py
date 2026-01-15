@@ -23,9 +23,9 @@ else:
     try:
         with st.spinner("Validating OpenAI API key..."):
             client.models.list()
-        st.success("OpenAI API key validated.")
+        st.success("Valid API key.")
     except Exception:
-        st.error("Invalid OpenAI API key or network error. Please check your key and try again.")
+        st.error("Invalid API key.")
         st.stop()
 
     # Let the user upload a file via `st.file_uploader`.
