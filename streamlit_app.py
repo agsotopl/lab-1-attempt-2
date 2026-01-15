@@ -21,7 +21,7 @@ else:
 
     # Validate API Key before request
     try:
-        with st.spinner("Validating OpenAI API key..."):
+        with st.spinner("Validating API key"):
             client.models.list()
         st.success("Valid API key.")
     except Exception:
